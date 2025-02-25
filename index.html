@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">memory</h1>
+            <div class="header-button-container desktop-block">
+                <button class="orange-btn restart-btn">Restart</button>
+                <button class="grey-btn restart-btn">New Game</button>
+            </div>
+            <div class="header-button-container desktop-none">
+                <button class="orange-btn menu-btn">Menu</button>
+            </div>
+        </header>
+        <main class="memory-game-container">
+
+        </main>
+        <footer class="footer">
+            <div class="footer-div-container">
+                <span class="title">Time</span>
+                <span class="time-counter content"></span>
+            </div>
+            <div class="footer-div-container">
+                <span class="title">Moves</span>
+                <span class="moves-counter content"></span>
+            </div>
+        </footer>
+        <div class="btn-modal">
+            <div class="btn-container">
+                <button class="restart-btn orange-btn">Restart</button>
+                <button class="restart-btn grey-btn">New Game</button>
+                <button class="grey-btn" id="continue-game-btn">Resume Game</button>
+            </div>
+        </div>
+        <div class="gameover-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>You did it!</h1>
+                    <p>Game over! Here's how you got on..</p>
+                </div>
+                <div class="modal-body">
+                <div>
+                    <span class="content-title">Time Elapsed</span>
+                    <span class="content-result" id="game-result-time">1:53</span>
+                </div>
+                <div>
+                    <span class="content-title">Moves Taken</span>
+                    <span class="content-result" id="game-result-moves">39 Moves</span>
+                </div>
+            </div>
+            <div class="modal-btn-container">
+                <button class="orange-btn restart-btn">Restart</button>
+                <button class="grey-btn restart-btn">Setup New Game</button>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
